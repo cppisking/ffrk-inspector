@@ -19,8 +19,11 @@ Installation instructions:
 9. Play the game!  That's it!  Submit issues you find (including feedback and/or feature requests) via the [Issue Tracker](https://github.com/cppisking/ffrk-inspector/issues).  In particular, let me know which features you want me to prioritize the most.  
 
 **FAQ (more things will be added to this list in time):**
-Q: I closed the app in the middle of a battle and it didn't update the "All Drops for this Dungeon" view.
+
+Q: *I closed the app in the middle of a battle and it didn't update the "All Drops for this Dungeon" view.*
+
 A: It only updates when you win, lose, or flee a battle, to make sure that each server roll is only committed to the database a single time.  
 
-Q: Is there any way to see the drops for a dungeon even when I'm not in that dungeon?  So I can find *everywhere* that drops a particular item and find the most efficient farming place?
+Q: *Is there any way to see the drops for a dungeon even when I'm not in that dungeon?  So I can find *everywhere* that drops a particular item and find the most efficient farming place?*
+
 A: Not yet, but I expect that will be the next thing I work on.  It will probably be in the "Item Search" tab of the Inspector.
