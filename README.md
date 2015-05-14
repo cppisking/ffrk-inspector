@@ -20,6 +20,10 @@ Installation instructions:
 
 **FAQ (more things will be added to this list in time):**
 
+Q: *I can see my drops and it appears to be working, but how can I see others' drops?  How do I know they can see mine?*
+
+A: First, look at the bottom for "Status: Connected" or "Status: Disconnected".  If it says Connected you're good to go.  If it doesn't seem like you're seeing other peoples' drops, try exiting the dungeon all the way back to the screen with the doors, and going back in.  Or try closing fiddler and restarting.  It's also possible nobody's done the painting you're doing.  Try doing the Heroic Daily, as it seems to be a high traffic event :)  If you still see nothing, file an [Issue](https://github.com/cppisking/ffrk-inspector/issues)
+
 Q: *I closed the app in the middle of a battle and it didn't update the "All Drops for this Dungeon" view.*
 
 A: It only updates when you win, lose, or flee a battle, to make sure that each server roll is only committed to the database a single time.  
@@ -27,3 +31,11 @@ A: It only updates when you win, lose, or flee a battle, to make sure that each 
 Q: *Is there any way to see the drops for a dungeon even when I'm not in that dungeon?  So I can find *everywhere* that drops a particular item and find the most efficient farming place?*
 
 A: Not yet, but I expect that will be the next thing I work on.  It will probably be in the "Item Search" tab of the Inspector.
+
+**Troubleshooting**
+
+Q: *I can play the game, and I see some stuff in Fiddler, but there's nothing in the UI and it looks like it's not working.*
+
+A: You probably didn't set up your SSL certificate correctly.  There's a lot of steps and it's easy to miss one.  See [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) for iOS instructions and [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) for Android instructions.
+
+
