@@ -36,6 +36,6 @@ A: Not yet, but I expect that will be the next thing I work on.  It will probabl
 
 Q: *I can play the game, and I see some stuff in Fiddler, but there's nothing in the UI and it looks like it's not working.*
 
-A: You probably didn't set up your SSL certificate correctly.  There's a lot of steps and it's easy to miss one.  See [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) for iOS instructions and [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) for Android instructions.
+A: You probably didn't set up your SSL certificate correctly.  There's a lot of steps and it's easy to miss one.  See [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) for iOS instructions and [here](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) for Android instructions.  If all you see on the left hand side of Fiddler is "Tunneling to <url>" then Fiddler isn't able to decrypt any of the requests due to a problem with your certificate.
 
 
