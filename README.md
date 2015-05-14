@@ -1,6 +1,6 @@
 # FFRKInspector v0.1 alpha
 
-Please submit issues you find using the alpha version of FFRK Inspector here.
+**Having trouble?  Doesn't work?  Random question?**  Please create an [Issue](https://github.com/cppisking/ffrk-inspector/issues) on Github instead of emailing me.  That way if other people have the same issue, I won't have to answer the same question many times.
 
 Installation instructions:
 
