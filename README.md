@@ -6,7 +6,7 @@ Installation instructions:
 
 1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows
 2. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
-3. Copy FFRKInspector.dll and Newtonsoft.Json.dll from the [Releases](https://github.com/cppisking/ffrk-inspector/releases) page to Documents\Fiddler2\Scripts
+3. Copy FFRKInspector.dll and Newtonsoft.Json.dll from the [Releases](https://github.com/cppisking/ffrk-inspector/releases) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
 4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
 5. Configure Fiddler for [iOS](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) or [Android](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) depending on your device.  **Note: You may need to edit the value in Tools > Fiddler Options > HTTPS > Enabled Protocols and set the string to "ssl3;tls1.2".  If you find yourself unable to browse to any websites or have degraded or no internet connectivity, check the value of this setting.**
 6. If everything is working, the left hand side should start displaying traffic from your mobile device as you browse the web or play FFRK.
