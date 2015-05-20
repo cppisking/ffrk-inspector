@@ -14,7 +14,7 @@ Installation instructions:
   1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
   2. **User**: ffrki-alpha
   3. **Password**: e6v8uaQ3vhdYPSSgaGWU
-  4. **Database Name**: ffrki-alpha
+  4. **Database Name**: ffrki-alpha2
 8. Press Test to test your connection, and if everything is working, press Save and restart Fiddler.
 9. Play the game!  That's it!  Submit issues you find (including feedback and/or feature requests) via the [Issue Tracker](https://github.com/cppisking/ffrk-inspector/issues).  In particular, let me know which features you want me to prioritize the most.  
 
