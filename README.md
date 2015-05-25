@@ -12,9 +12,9 @@ Installation instructions:
 6. If everything is working, the left hand side should start displaying traffic from your mobile device as you browse the web or play FFRK.
 7. Once you find that everything is working, visit the "About" page of FFRK Inspector and enter the correct database credentials.
   1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
-  2. **User**: ffrki-alpha
-  3. **Password**: e6v8uaQ3vhdYPSSgaGWU
-  4. **Database Name**: ffrki-alpha2
+  2. **User**: ffrki-user
+  3. **Password**: qUm1FyGjU8USclhKY4gF
+  4. **Database Name**: ffrki
 8. Press Test to test your connection, and if everything is working, press Save and restart Fiddler.
 9. Play the game!  That's it!  Submit issues you find (including feedback and/or feature requests) via the [Issue Tracker](https://github.com/cppisking/ffrk-inspector/issues).  In particular, let me know which features you want me to prioritize the most.  
 
