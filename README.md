@@ -21,21 +21,21 @@ Installation instructions:
 **Android Users:**  Try the steps below, but if they don't work, see [this thread](http://www.reddit.com/r/FFRecordKeeper/comments/35x6nq/introducing_ffrk_inspector_and_looking_for_alpha/cr9gz5n).  Android configuration is complicated by a number of factors, and there does not seem to be a single universal solution for all Android users
 
 1. Configure Fiddler for [iOS](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) or [Android](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) depending on your device.
-2. Configure Fiddler HTTPS options as shown in the following image.
-<img src="http://i.imgur.com/xYL5x3v.jpg"/>
+2. Configure Fiddler HTTPS options as shown in the following image.  <img src="http://i.imgur.com/xYL5x3v.jpg"/>
 
-More information about these steps can be found on the corresponding platform specific configuration page linked in step 1.
+More information about these steps can be found on the corresponding platform specific configuration page linked in step 1
+
 (Update: The certificate maker plugin is for iOS, not Android.  Ignore that part of the screenshot if you're on Android).
 
-6. If everything is working, the left hand side should start displaying traffic from your mobile device as you browse the web or play FFRK (Note: If you use Chrome on iOS, sites requiring https will not work.  There is no workaround for this, it is a limitation of iOS -- not a limitation of Chrome -- and there is no solution except use Safari or disable the proxy).
+3. If everything is working, the left hand side should start displaying traffic from your mobile device as you browse the web or play FFRK (Note: If you use Chrome on iOS, sites requiring https will not work.  There is no workaround for this, it is a limitation of iOS -- not a limitation of Chrome -- and there is no solution except use Safari or disable the proxy).
 
-7. Once you find that everything is working, visit the "About" page of FFRK Inspector and enter the following credentials.
+4. Once you find that everything is working, visit the "About" page of FFRK Inspector and enter the following credentials.
   1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
   2. **User**: ffrki-user
   3. **Password**: qUm1FyGjU8USclhKY4gF
   4. **Database Name**: ffrki
-8. Press Test to test your connection, and if everything is working, press Save and restart Fiddler.
-9. Play the game!  That's it!  Submit issues you find (including feedback and/or feature requests) via the [Issue Tracker](https://github.com/cppisking/ffrk-inspector/issues).  In particular, let me know which features you want me to prioritize the most.  
+5. Press Test to test your connection, and if everything is working, press Save and restart Fiddler.
+6. Play the game!  That's it!  Submit issues you find (including feedback and/or feature requests) via the [Issue Tracker](https://github.com/cppisking/ffrk-inspector/issues).  In particular, let me know which features you want me to prioritize the most.  
 
 **FAQ (more things will be added to this list in time):**
 
