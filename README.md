@@ -23,7 +23,7 @@ Installation instructions:
 1. Configure Fiddler for [iOS](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) or [Android](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) depending on your device.
 2. Configure Fiddler HTTPS options as shown in the following image.  <img src="http://i.imgur.com/xYL5x3v.jpg"/>
 
-More information about these steps can be found on the corresponding platform specific configuration page linked in step 1
+More information can be found on the corresponding platform specific configuration page linked in step 1.
 
 (Update: The certificate maker plugin is for iOS, not Android.  Ignore that part of the screenshot if you're on Android).
 
