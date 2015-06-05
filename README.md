@@ -1,5 +1,8 @@
 # FFRKInspector
 
+FFRK Inspector is a tool used to assist you in farming orbs or items.  It works by acting as a proxy between your device and the game's server, so that it can see various events in real time as they happen.  It is backed by a centralized database which is used to crowdsource information about drop rates.  In short, everyone who plays the game while connected to FFRK Inspector will automatically contribute statistics about their drops to a single master database.  You can then query the database to find out, for example, where the most efficient farming spot is for a particular item.
+
+
 **Having trouble?  Doesn't work?  Random question?**  First check the FAQ and Troubleshooting section below, and then if it still doesn't work, create an [Issue](https://github.com/cppisking/ffrk-inspector/issues) on Github instead of emailing me.  That way if other people have the same issue, solutions will be easier for others to find.
 
 Installation instructions:
