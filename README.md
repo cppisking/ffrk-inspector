@@ -18,7 +18,7 @@ Installation instructions:
 
 **Bluestacks Users:**  FFRK Inspector may not work.  You're welcome to try, but so far people have reported difficulty configuring Bluestacks to use an HTTP Proxy
 
-**Android Users:**  Try the steps below, but if they don't work, see [this thread](http://www.reddit.com/r/FFRecordKeeper/comments/35x6nq/introducing_ffrk_inspector_and_looking_for_alpha/cr9gz5n).  Android configuration is complicated by a number of factors, and there does not seem to be a single universal solution for all Android users
+**Android Users:**  Try the steps below, but if they don't work, see [this thread](http://www.reddit.com/r/FFRecordKeeper/comments/35x6nq/introducing_ffrk_inspector_and_looking_for_alpha/cr9gz5n).  Android configuration is complicated by a number of factors, and there does not seem to be a single universal solution for all Android users.   **Note that Android users will need to add a bypass of 127.0.0.1 on their wifi proxy**
 
 1. Configure Fiddler for [iOS](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForiOS) or [Android](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) depending on your device.
 2. Configure Fiddler HTTPS options as shown in the following image.  <img src="http://i.imgur.com/xYL5x3v.jpg"/>
