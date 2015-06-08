@@ -29,7 +29,8 @@ More information can be found on the corresponding platform specific configurati
 
 3. If everything is working, the left hand side should start displaying traffic from your mobile device as you browse the web or play FFRK (Note: If you use Chrome on iOS, sites requiring https will not work.  There is no workaround for this, it is a limitation of iOS -- not a limitation of Chrome -- and there is no solution except use Safari or disable the proxy).
 
-4. Once you find that everything is working, visit the "About" page of FFRK Inspector and enter the following credentials.
+**Connecting to the Database**
+Visit the "About" page of FFRK Inspector and enter the following credentials.
   1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
   2. **User**: ffrki-user
   3. **Password**: qUm1FyGjU8USclhKY4gF
