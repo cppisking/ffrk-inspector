@@ -65,28 +65,59 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
 #### Android (Generic)
 
-This is confirmed to work on Nexus 5 and 7 devices running Android 5.0.2 and an NVIDIA Shield Tablet running Android 5.1.1.
+This was tested on Nexus 5 and 7 devices running Android 5.0.2 and an NVIDIA Shield Tablet running Android 5.1.1.
 
 1. Go to Wi-Fi settings and long press on your SSID. Click on “Modify network”
 
      ![GitHub Logo](/Images/Documentation/android_wifi.png)
-
-2. Check of the “Advanced options” box and fill in the IP address of the computer which you installed Fiddler on, and set the port to 8888. Make sure to add 127.0.0.1 to the “Bypass proxy for” setting or the game will not load completely. You can find your computer’s IP address by opening a cmd prompt and running the command: ipconfig
+2. Check the “Advanced options” box and fill in the IP address of the computer which you installed Fiddler on, and set the port to 8888. Make sure to add 127.0.0.1 to the “Bypass proxy for” setting or the game will not load completely. You can find your computer’s IP address by opening a cmd prompt and running the command: ipconfig
 
      ![GitHub Logo](/Images/Documentation/android_wifi_detail.png)
      ![GitHub Logo](/Images/Documentation/ipconfig.png)
-
-3. Once that is set, open Chrome and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888.
+3. Once that is set, open Chrome and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888. You should get this page served up by the Fiddler app.
 
      ![GitHub Logo](/Images/Documentation/android_chrome_fiddler.png)
+4. Click on the “FiddlerRoot certificate” link at the bottom of the page.  Type in a name for the certificate, I named it “Fiddler”. Hit OK.
 
+     ![GitHub Logo](/Images/Documentation/android_cert_name.png)
+5. If you don’t already have a PIN set on your device, you will need to set one.
 
+     ![GitHub Logo](/Images/Documentation/android_cert_security.png)
 
+6. Once that is set, you will get this warning. Clicking on the “CHECK TRUSTED CREDENTIALS” link will show you that you have the Fiddler root certificate installed. You will permanently have the "!" triangle in your notifications reminding you that your traffic can potentially be sniffed. At this point you should be able to open FFRK on your device and as long as Fiddler is running it should load up and you’ll start to see data being populated in the FFRK Inspector tabs as you move in and out of dungeons.
 
+     ![GitHub Logo](/Images/Documentation/android_trusted_credentials.png)
+     ![GitHub Logo](/Images/Documentation/android_trusted_credentials_list.png)
 
+#### Apple/iOS
 
+This was tested on an iPad Mini 2 running iOS 8.3.
 
+1. Go to Settings, Wi-Fi and click on the ‘i’ with the blue circle around it.
 
+     ![GitHub Logo](/Images/Documentation/iOS_wifi.png)
+2. Near the bottom under “HTTP Proxy”, select “Manual” and fill in the IP address of the computer you installed Fiddler on, and set the port to 8888. If you need to find your computer’s IP address, you can do so by opening a cmd prompt and running the command: ipconfig
+
+     ![GitHub Logo](/Images/Documentation/iOS_wifi_detail.png)
+     ![GitHub Logo](/Images/Documentation/ipconfig.png)
+3. Open Safari and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888.  Click on the “FiddlerRoot certificate” link at the bottom of the page.  Type in a name for the certificate, I named it “Fiddler”. Hit OK.
+
+     ![GitHub Logo](/Images/Documentation/iOS_safari_fiddler.png)
+4. You’ll be prompted to install the Fiddler root certificate. Go ahead and click “Install” in the upper right.
+
+     ![GitHub Logo](/Images/Documentation/iOS_install_cert.png)
+
+   You’ll get an additional warning saying that the certificate is unverified, click “Install” again.
+   
+     ![GitHub Logo](/Images/Documentation/iOS_cert_warning.png)
+     
+   And click "Install" once more.
+   
+     ![GitHub Logo](/Images/Documentation/iOS_cert_confirm.png)
+     
+   At this point you should be able to open FFRK on your device and as long as Fiddler is running it should load up and you’ll start to see data being populated in the FFRK Inspector tabs as you move in and out of dungeons.
+   
+----
 
 
 **Configuring Fiddler to capture traffic from your phone.**
