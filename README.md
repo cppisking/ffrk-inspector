@@ -33,8 +33,6 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
      
      ![GitHub Logo](/Images/Documentation/fiddler8.png)
 
-
-
 #### Installing MySQL Connector
 1. Download the [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
 2. Run the installer. You can pick the “Typical” option and click through the rest.
@@ -44,13 +42,24 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
      ![GitHub Logo](/Images/Documentation/mysql3.png)
      ![GitHub Logo](/Images/Documentation/mysql4.png)
 
-
-
 #### Configuring FFRK Inspector Add-In
 
+1. Download the latest release from https://github.com/cppisking/ffrk-inspector/releases. You'll need the following files: FFRKInspector.dll, FFRKInspector.pdb, HtmlAgilityPack.dll, and Newtonsoft.Json.dll.
+2. Save each file in to the Fiddler2\Scripts folder in your My Documents.
+   
+     ![GitHub Logo](/Images/Documentation/inspector1.png)
+3. Start Fiddler (restart it if it was open), and you should have a new tab show up on the right, FFRK Inspector.
 
-3. Copy FFRKInspector.dll, FFRKInspector.pdb, and Newtonsoft.Json.dll from the [Latest Release](https://github.com/cppisking/ffrk-inspector/releases/latest) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
-4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
+     ![GitHub Logo](/Images/Documentation/inspector2.png)
+4. Go the About tab with FFRK Inspector and copy and paste the login info below. Hit the Test button and make sure you get a success message and restart Fiddler.
+  1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
+  2. **User**: ffrki-user
+  3. **Password**: qUm1FyGjU8USclhKY4gF
+  4. **Database Name**: ffrki
+     ![GitHub Logo](/Images/Documentation/inspector3.png)
+
+5. When Fiddler starts up it should say “Status: Connected” in the lower left of the FFRK tab. That’s it for the FFRK configuration.
+
 
 **Configuring Fiddler to capture traffic from your phone.**
 
