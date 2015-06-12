@@ -31,8 +31,7 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
 6. Next go to the Connections tab, and check the box for “Allow remote computers to connect”, and you can also uncheck “Act as system proxy on startup”, as again, we’re not interested in seeing traffic from the local PC. Hit OK after you’re done, that completes Fiddler configuration.
      
-     
-     ![GitHub Logo](/Images/Documentation/fiddler4.png)
+     ![GitHub Logo](/Images/Documentation/fiddler8.png)
 
 
 #### Installing MySQL Connector
