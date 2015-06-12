@@ -7,7 +7,7 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
 **Having trouble?  Doesn't work?  Random question?**  First check the FAQ and Troubleshooting section below, and then if it still doesn't work, create an [Issue](https://github.com/cppisking/ffrk-inspector/issues) on Github instead of emailing me.  That way if other people have the same issue, solutions will be easier for others to find.
 
-Installation instructions:
+## Installation instructions:
 
 1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows
 2. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
