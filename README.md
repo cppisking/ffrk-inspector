@@ -10,6 +10,8 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 ## Installation instructions:
 
 1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows
+2. 
+![GitHub Logo](/Images/Documentation/fiddler1.png)
 2. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
 3. Copy FFRKInspector.dll, FFRKInspector.pdb, and Newtonsoft.Json.dll from the [Latest Release](https://github.com/cppisking/ffrk-inspector/releases/latest) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
 4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
