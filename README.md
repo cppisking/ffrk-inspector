@@ -9,9 +9,16 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
 ## Installation instructions:
 
+#### Installing and configuring Fiddler
 1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows
-2. 
-![GitHub Logo](/Images/Documentation/fiddler1.png)
+2. Run the installer.  You can accept the default options.
+     ![GitHub Logo](/Images/Documentation/fiddler1.png)
+     ![GitHub Logo](/Images/Documentation/fiddler2.png)
+     ![GitHub Logo](/Images/Documentation/fiddler3.png)
+3. Start Fiddler, for just FFRK purposes you can click ‘Cancel’ on this dialog box. We don’t need to capture traffic from Universal/Metro apps. 
+
+
+
 2. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
 3. Copy FFRKInspector.dll, FFRKInspector.pdb, and Newtonsoft.Json.dll from the [Latest Release](https://github.com/cppisking/ffrk-inspector/releases/latest) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
 4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
