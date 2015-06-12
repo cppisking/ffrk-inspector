@@ -12,6 +12,7 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 #### Installing and configuring Fiddler
 1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows.
 2. Run the installer.  You can accept the default options.
+
      ![GitHub Logo](/Images/Documentation/fiddler1.png)
      ![GitHub Logo](/Images/Documentation/fiddler2.png)
      ![GitHub Logo](/Images/Documentation/fiddler3.png)
@@ -19,10 +20,16 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
      ![GitHub Logo](/Images/Documentation/fiddler4.png)
 4. Once Fiddler is open, go to Tools -> Fiddler Options.
+
      ![GitHub Logo](/Images/Documentation/fiddler5.png)
 5. Go to the HTTPS tab and check the box for Decrypt HTTPS traffic. A dialog box will pop up asking if you want your computer to trust the Fiddler generated interception certificate. You can click ‘No’, as we’re not interested in intercepting traffic on the PC.
+
      ![GitHub Logo](/Images/Documentation/fiddler6.png)
-     ![GitHub Logo](/Images/Documentation/fiddler4.png)
+     You can set it to decrypt HTTPS traffic “…from remote clients only”.
+     ![GitHub Logo](/Images/Documentation/fiddler7.png)
+6. Next go to the Connections tab, and check the box for “Allow remote computers to connect”, and you can also uncheck “Act as system proxy on startup”, as again, we’re not interested in seeing traffic from the local PC. Hit OK after you’re done, that completes Fiddler configuration.
+     
+     
      ![GitHub Logo](/Images/Documentation/fiddler4.png)
 
 
