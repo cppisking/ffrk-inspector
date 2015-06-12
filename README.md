@@ -56,9 +56,37 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
   2. **User**: ffrki-user
   3. **Password**: qUm1FyGjU8USclhKY4gF
   4. **Database Name**: ffrki
+
      ![GitHub Logo](/Images/Documentation/inspector3.png)
 
 5. When Fiddler starts up it should say “Status: Connected” in the lower left of the FFRK tab. That’s it for the FFRK configuration.
+
+### Setting up your device
+
+#### Android (Generic)
+
+This is confirmed to work on Nexus 5 and 7 devices running Android 5.0.2 and an NVIDIA Shield Tablet running Android 5.1.1.
+
+1. Go to Wi-Fi settings and long press on your SSID. Click on “Modify network”
+
+     ![GitHub Logo](/Images/Documentation/android_wifi.png)
+
+2. Check of the “Advanced options” box and fill in the IP address of the computer which you installed Fiddler on, and set the port to 8888. Make sure to add 127.0.0.1 to the “Bypass proxy for” setting or the game will not load completely. You can find your computer’s IP address by opening a cmd prompt and running the command: ipconfig
+
+     ![GitHub Logo](/Images/Documentation/android_wifi_detail.png)
+     ![GitHub Logo](/Images/Documentation/ipconfig.png)
+
+3. Once that is set, open Chrome and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888.
+
+     ![GitHub Logo](/Images/Documentation/android_chrome_fiddler.png)
+
+
+
+
+
+
+
+
 
 
 **Configuring Fiddler to capture traffic from your phone.**
