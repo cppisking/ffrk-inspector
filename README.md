@@ -16,6 +16,13 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
      ![GitHub Logo](/Images/Documentation/fiddler2.png)
      ![GitHub Logo](/Images/Documentation/fiddler3.png)
 3. Start Fiddler, for just FFRK purposes you can click ‘Cancel’ on this dialog box. We don’t need to capture traffic from Universal/Metro apps.
+
+     ![GitHub Logo](/Images/Documentation/fiddler4.png)
+4. Once Fiddler is open, go to Tools -> Fiddler Options.
+     ![GitHub Logo](/Images/Documentation/fiddler5.png)
+5. Go to the HTTPS tab and check the box for Decrypt HTTPS traffic. A dialog box will pop up asking if you want your computer to trust the Fiddler generated interception certificate. You can click ‘No’, as we’re not interested in intercepting traffic on the PC.
+     ![GitHub Logo](/Images/Documentation/fiddler6.png)
+     ![GitHub Logo](/Images/Documentation/fiddler4.png)
      ![GitHub Logo](/Images/Documentation/fiddler4.png)
 
 
