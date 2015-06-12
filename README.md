@@ -34,8 +34,21 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
      ![GitHub Logo](/Images/Documentation/fiddler8.png)
 
 
+
 #### Installing MySQL Connector
-1. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
+1. Download the [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
+2. Run the installer. You can pick the “Typical” option and click through the rest.
+
+     ![GitHub Logo](/Images/Documentation/mysql1.png)
+     ![GitHub Logo](/Images/Documentation/mysql2.png)
+     ![GitHub Logo](/Images/Documentation/mysql3.png)
+     ![GitHub Logo](/Images/Documentation/mysql4.png)
+
+
+
+#### Configuring FFRK Inspector Add-In
+
+
 3. Copy FFRKInspector.dll, FFRKInspector.pdb, and Newtonsoft.Json.dll from the [Latest Release](https://github.com/cppisking/ffrk-inspector/releases/latest) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
 4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
 
