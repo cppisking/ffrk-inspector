@@ -25,7 +25,9 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 5. Go to the HTTPS tab and check the box for Decrypt HTTPS traffic. A dialog box will pop up asking if you want your computer to trust the Fiddler generated interception certificate. You can click ‘No’, as we’re not interested in intercepting traffic on the PC.
 
      ![GitHub Logo](/Images/Documentation/fiddler6.png)
-     You can set it to decrypt HTTPS traffic “…from remote clients only”.
+
+You can set it to decrypt HTTPS traffic “…from remote clients only”.
+
      ![GitHub Logo](/Images/Documentation/fiddler7.png)
 6. Next go to the Connections tab, and check the box for “Allow remote computers to connect”, and you can also uncheck “Act as system proxy on startup”, as again, we’re not interested in seeing traffic from the local PC. Hit OK after you’re done, that completes Fiddler configuration.
      
