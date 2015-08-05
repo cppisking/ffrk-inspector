@@ -1,3 +1,8 @@
+# 8/5/2015
+
+## Added
+* **Tifa event** - Wizard Bracelet (VII), Crystal Glove (VII), Silver Barrette (VII), Mythril Clip (VII)
+
 # 7/31/2015
 
 ## Added
