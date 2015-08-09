@@ -7,12 +7,118 @@ Note: Due to being built using C# and the .NET Framework, FFRK Inspector is curr
 
 **Having trouble?  Doesn't work?  Random question?**  First check the FAQ and Troubleshooting section below, and then if it still doesn't work, create an [Issue](https://github.com/cppisking/ffrk-inspector/issues) on Github instead of emailing me.  That way if other people have the same issue, solutions will be easier for others to find.
 
-Installation instructions:
+## Installation instructions:
 
-1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows
-2. Install [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
-3. Copy FFRKInspector.dll, FFRKInspector.pdb, and Newtonsoft.Json.dll from the [Latest Release](https://github.com/cppisking/ffrk-inspector/releases/latest) page to Documents\Fiddler2\Scripts (Recommended to run Fiddler and then close before doing this step.  It will create this folder for you).
-4. Run Fiddler.  You should see an FFRK Inspector tab on the right.  But wait!  You're not ready yet.
+#### Installing and configuring Fiddler
+1. Download [Fiddler 4](http://www.telerik.com/download/fiddler) for Windows.
+2. Run the installer.  You can accept the default options.
+
+     ![GitHub Logo](/Images/Documentation/fiddler1.png)
+     ![GitHub Logo](/Images/Documentation/fiddler2.png)
+     ![GitHub Logo](/Images/Documentation/fiddler3.png)
+3. Start Fiddler, for just FFRK purposes you can click ‘Cancel’ on this dialog box. We don’t need to capture traffic from Universal/Metro apps.
+
+     ![GitHub Logo](/Images/Documentation/fiddler4.png)
+4. Once Fiddler is open, go to Tools -> Fiddler Options.
+
+     ![GitHub Logo](/Images/Documentation/fiddler5.png)
+5. Go to the HTTPS tab and check the box for Decrypt HTTPS traffic. A dialog box will pop up asking if you want your computer to trust the Fiddler generated interception certificate. You can click ‘No’, as we’re not interested in intercepting traffic on the PC.
+
+     ![GitHub Logo](/Images/Documentation/fiddler6.png)
+
+   You can set it to decrypt HTTPS traffic “…from remote clients only”.
+     ![GitHub Logo](/Images/Documentation/fiddler7.png)
+
+6. Next go to the Connections tab, and check the box for “Allow remote computers to connect”, and you can also uncheck “Act as system proxy on startup”, as again, we’re not interested in seeing traffic from the local PC. Hit OK after you’re done, that completes Fiddler configuration.
+     
+     ![GitHub Logo](/Images/Documentation/fiddler8.png)
+
+#### Installing MySQL Connector
+1. Download the [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
+2. Run the installer. You can pick the “Typical” option and click through the rest.
+
+     ![GitHub Logo](/Images/Documentation/mysql1.png)
+     ![GitHub Logo](/Images/Documentation/mysql2.png)
+     ![GitHub Logo](/Images/Documentation/mysql3.png)
+     ![GitHub Logo](/Images/Documentation/mysql4.png)
+
+#### Configuring FFRK Inspector Add-In
+
+1. Download the latest release from https://github.com/cppisking/ffrk-inspector/releases. You'll need the following files: FFRKInspector.dll, FFRKInspector.pdb, HtmlAgilityPack.dll, and Newtonsoft.Json.dll.
+2. Save each file in to the Fiddler2\Scripts folder in your My Documents.
+   
+     ![GitHub Logo](/Images/Documentation/inspector1.png)
+3. Start Fiddler (restart it if it was open), and you should have a new tab show up on the right, FFRK Inspector.
+
+     ![GitHub Logo](/Images/Documentation/inspector2.png)
+4. Go the About tab with FFRK Inspector and copy and paste the login info below. Hit the Test button and make sure you get a success message and restart Fiddler.
+  1. **Host**: ffrk-test.ckamoyrtavob.us-west-2.rds.amazonaws.com
+  2. **User**: ffrki-user
+  3. **Password**: qUm1FyGjU8USclhKY4gF
+  4. **Database Name**: ffrki
+
+     ![GitHub Logo](/Images/Documentation/inspector3.png)
+
+5. When Fiddler starts up it should say “Status: Connected” in the lower left of the FFRK tab. That’s it for the FFRK configuration.
+
+### Setting up your device
+
+#### Android (Generic)
+
+This was tested on Nexus 5 and 7 devices running Android 5.0.2 and an NVIDIA Shield Tablet running Android 5.1.1.
+
+1. Go to Wi-Fi settings and long press on your SSID. Click on “Modify network”
+
+     ![GitHub Logo](/Images/Documentation/android_wifi.png)
+2. Check the “Advanced options” box and fill in the IP address of the computer which you installed Fiddler on, and set the port to 8888. Make sure to add 127.0.0.1 to the “Bypass proxy for” setting or the game will not load completely. You can find your computer’s IP address by opening a cmd prompt and running the command: ipconfig
+
+     ![GitHub Logo](/Images/Documentation/android_wifi_detail.png)
+     ![GitHub Logo](/Images/Documentation/ipconfig.png)
+3. Once that is set, open Chrome and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888. You should get this page served up by the Fiddler app.
+
+     ![GitHub Logo](/Images/Documentation/android_chrome_fiddler.png)
+4. Click on the “FiddlerRoot certificate” link at the bottom of the page.  Type in a name for the certificate, I named it “Fiddler”. Hit OK.
+
+     ![GitHub Logo](/Images/Documentation/android_cert_name.png)
+5. If you don’t already have a PIN set on your device, you will need to set one.
+
+     ![GitHub Logo](/Images/Documentation/android_cert_security.png)
+
+6. Once that is set, you will get this warning. Clicking on the “CHECK TRUSTED CREDENTIALS” link will show you that you have the Fiddler root certificate installed. You will permanently have the "!" triangle in your notifications reminding you that your traffic can potentially be sniffed. At this point you should be able to open FFRK on your device and as long as Fiddler is running it should load up and you’ll start to see data being populated in the FFRK Inspector tabs as you move in and out of dungeons.
+
+     ![GitHub Logo](/Images/Documentation/android_trusted_credentials.png)
+     ![GitHub Logo](/Images/Documentation/android_trusted_credentials_list.png)
+
+#### Apple/iOS
+
+This was tested on an iPad Mini 2 running iOS 8.3.
+
+1. Go to Settings, Wi-Fi and click on the ‘i’ with the blue circle around it.
+
+     ![GitHub Logo](/Images/Documentation/iOS_wifi.png)
+2. Near the bottom under “HTTP Proxy”, select “Manual” and fill in the IP address of the computer you installed Fiddler on, and set the port to 8888. If you need to find your computer’s IP address, you can do so by opening a cmd prompt and running the command: ipconfig
+
+     ![GitHub Logo](/Images/Documentation/iOS_wifi_detail.png)
+     ![GitHub Logo](/Images/Documentation/ipconfig.png)
+3. Open Safari and browse to: http://<your IP address>:8888, so in my case, it’s http://192.168.1.97:8888.  Click on the “FiddlerRoot certificate” link at the bottom of the page.  Type in a name for the certificate, I named it “Fiddler”. Hit OK.
+
+     ![GitHub Logo](/Images/Documentation/iOS_safari_fiddler.png)
+4. You’ll be prompted to install the Fiddler root certificate. Go ahead and click “Install” in the upper right.
+
+     ![GitHub Logo](/Images/Documentation/iOS_install_cert.png)
+
+   You’ll get an additional warning saying that the certificate is unverified, click “Install” again.
+   
+     ![GitHub Logo](/Images/Documentation/iOS_cert_warning.png)
+     
+   And click "Install" once more.
+   
+     ![GitHub Logo](/Images/Documentation/iOS_cert_confirm.png)
+     
+   At this point you should be able to open FFRK on your device and as long as Fiddler is running it should load up and you’ll start to see data being populated in the FFRK Inspector tabs as you move in and out of dungeons.
+   
+----
+
 
 **Configuring Fiddler to capture traffic from your phone.**
 
